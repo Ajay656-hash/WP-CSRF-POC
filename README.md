@@ -1,2 +1,3 @@
 WP-CSRF-POC
 ===========
+This project serves to demonstrate a few novel ideas for how to exploit vulnerabilities in Wordpress plugins that allows for delivering a XSS payload through a CSRF vector, and doing so by delivering the minimal viable set of code to the browser. Rather than spraying a target, we can determine the presence of a plugin on a target on demand. This allows for a more sneaky delivery of our payload.
